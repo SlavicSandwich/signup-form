@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "japanese";
+  src: url(fonts/midorima-personaluse-regular-webfont.woff2) format("woff2"),
+  url(fonts/midorima-personaluse-regular-webfont.woff) format("woff");
+}
+
+
+
 html {
   height: 100%;
 }
@@ -26,6 +34,7 @@ body {
 }
 
 .logo {
+  font: 1em "japanese", monospace;
   display: flex;
   justify-content: center;
   align-items: center;
