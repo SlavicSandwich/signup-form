@@ -44,12 +44,86 @@
           <p>You <em>know</em> you want to.</p>
         </header>
 
-          <div class="form-container">
-            <p>Let's do this!</p>
-            <form action="" method="get" class="signup-form">
-
-            </form>
-          </div>
+        <div class="form-container" id="signup">
+          <p>Let's do this!</p>
+          <form action="" method="get" class="signup-form">
+            <div class="form-row">
+              <label for="usr-name">FIRST NAME</label>
+              <input
+                type="text"
+                name="name"
+                required
+                id="usr-name"
+                minlength="2"
+                maxlength="20"
+                placeholder="Your first name(Luke, Anna...)"
+              />
+            </div>
+            <div class="form-row">
+              <label for="usr-surname">LAST NAME</label>
+              <input
+                type="text"
+                name="surname"
+                required
+                id="usr-surname"
+                minlength="2"
+                maxlength="20"
+                placeholder="Your second name(Doe, Borne...)"
+              />
+            </div>
+            <div class="form-row">
+              <label for="usr-mail">EMAIL</label>
+              <input
+                type="email"
+                name="mail"
+                id="mail"
+                required
+                pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
+                placeholder="Your email adress"
+              />
+            </div>
+            <div class="form-row">
+              <label for="usr-phone">PHONE NUMBER</label>
+              <input
+                type="tel"
+                name="phone"
+                minlength="11"
+                required
+                id="usr-phone"
+                placeholder="Your phone number"
+              />
+            </div>
+            <div class="form-row">
+              <label for="usr-password">PASSWORD</label>
+              <input
+                type="password"
+                name="password"
+                required
+                id="usr-password"
+                minlength="8"
+                maxlength="20"
+                placeholder="Your password(must be at least 8 characters)"
+              />
+              <span class="wrong-password">*Passwords don't match</span>
+            </div>
+            <div class="form-row">
+              <label for="usr-confirm">CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                name="confirm"
+                required
+                id="usr-confirm"
+                minlength="8"
+                maxlength="20"
+                placeholder="Repeat your password"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="submit-section">
+          <button type="submit" form="signup">Create Account</button>
+          <p>Already have an account? <a>Log in</a></p>
+        </div>
       </div>
     </div>
   </body>
